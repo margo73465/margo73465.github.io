@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Fenton Karma</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<script src="js/jquery.min.js" type = "text/javascript"></script>
+<script src="js/d3.v3.min.js" charset="utf-8" type = "text/javascript"></script>
+<script src="js/dropit.js"></script>
+<script src="js/queue.js"></script>
+<script src="js/visualization.js" type = "text/javascript"></script>
+
+<div class = "main">
+	<div class = "top">
+		<form action = "" method = "GET" class = "initial_form">
+			Model Name: <input type = "text" name = "model_name" value="">
+			<input type = "button" value = "Draw AP" onClick = "readModel(this.form)">
+			<input type = "button" value = "Draw Grandi model" onClick = "drawGrandi()">
+		</form>
+	</div>
+	<div class = "right">
+		<form action = "" method = "GET" id = "adjustment_form">
+			  u_o: <input type = "range" name = "u_o" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  u_u: <input type = "range" name = "u_u" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  theta_v: <input type = "range" name = "theta_v" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  theta_w: <input type = "range" name = "theta_w" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  theta_v_minus: <input type = "range" name = "theta_v_minus" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  theta_o: <input type = "range" name = "theta_o" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_v1_minus: <input type = "range" name = "tau_v1_minus" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_v2_minus: <input type = "range" name = "tau_v2_minus" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_v_plus: <input type = "range" name = "tau_v_plus" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_w1_minus: <input type = "range" name = "tau_w1_minus" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_w2_minus: <input type = "range" name = "tau_w2_minus" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  k_w_minus: <input type = "range" name = "k_w_minus" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  u_w_minus: <input type = "range" name = "u_w_minus" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_w_plus: <input type = "range" name = "tau_w_plus" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_fi: <input type = "range" name = "tau_fi" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_o1: <input type = "range" name = "tau_o1" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br> 
+			  tau_o2: <input type = "range" name = "tau_o2" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_so1: <input type = "range" name = "tau_so1" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_so2: <input type = "range" name = "tau_so2" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  k_so: <input type = "range" name = "k_so" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  u_so: <input type = "range" name = "u_so" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_s1: <input type = "range" name = "tau_s1" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_s2: <input type = "range" name = "tau_s2" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  k_s: <input type = "range" name = "k_s" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  u_s: <input type = "range" name = "u_s" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_si: <input type = "range" name = "tau_si" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  tau_w_inf: <input type = "range" name = "tau_w_inf" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  w_inf_star: <input type = "range" name = "w_inf_star" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  m: <input type = "range" name = "m" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  b: <input type = "range" name = "b" min = "0.01" max = "1.99" step = "0.01" class = "slider"><br>
+			  <input type = "button" value = "Submit" onClick = "readScaleFactors(this.form)">
+			  <input type = "button" value = "Reset" onClick = "resetScaleFactors(this.form)">
+			  <input type = "button" value = "Get parameters" onclick="getParameters(this.form)">
+		</form>
+	</div>
+	<div class = "stochastic"></div>
+	<div class = "restitution"></div>
+</div>
+
+</body>
+</html>

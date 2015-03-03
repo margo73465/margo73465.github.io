@@ -1,0 +1,73 @@
+body, h1, h2, h3, h4, h5 {
+  font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+.align-right { text-align: right; }
+.align-left { text-align: left; }
+
+#main-container {
+  top: 0px;
+  left: 0px;
+  background-color: #FFF;
+  width: 900px;
+  height: 700px;
+  padding: 25px 25px 25px 25px;
+}
+
+/* map */
+svg {
+  fill: #FFF;
+}
+
+path.nbhd {
+  cursor: pointer;
+  fill: #ccc;
+  fill-opacity: .75;
+  stroke: #FFF;
+  stroke-width: 1px;
+}
+path.nbhd:hover,
+path.nbhd.active {
+  stroke: #000;
+}
+
+/* UI */
+#content {
+  width: 550px;
+  float: left;
+}
+#details.panel.panel-default {
+  width: 300px;
+  float: right;
+}
+p.lead {
+  text-align: center;
+}
+span#visualized-metric {
+  font-weight:bold;
+}
+
+/* Chart */
+.label {
+  font: 11px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-family: font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  font-size: 14px;
+  font-weight: normal;
+  fill: black;
+}
+.link { 
+    stroke:gray;
+    stroke-width:0.5
+}

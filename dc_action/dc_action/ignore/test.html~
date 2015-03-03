@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+  <script>
+    var w = 500;
+    var h = 500;
+
+    var container = d3.select("body").append("svg")
+    .attr("width",w)
+    .attr("height",h);
+
+    d3.csv("neighborhoods44.csv", function(error, data){
+       if(error) return console.warn(error);
+       data = json;
+       make_graph(data);
+    }
+
+    function make_graph(data){
+
+
+    }
+  </script>
+</body>

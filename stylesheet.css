@@ -1,0 +1,116 @@
+/* {
+   border: 1px dashed blue;
+}*/
+
+a:link{
+   text-decoration:none;
+   color:black;
+}
+a:hover{
+   font-weight:bold;
+}
+
+#canvas{
+   max-width: 900px;
+   margin: 10px auto;
+   padding: 50px;
+}
+
+div{
+   display: block;
+}
+
+body{
+   font-family: "Courier New","Courier","monospace";
+   font-size: 13px;
+   line-height: 1.5em;
+}
+
+#header{
+   margin-bottom: 35px;
+   height: 50px;
+}
+
+#logo{
+   float:left;
+   display:inline-block;
+   text-align:left;
+}
+
+.logo{
+   font-size: 27px;
+   text-transform: uppercase;
+   letter-spacing: 9px;
+   font-weight: bold;
+}
+
+#top_nav{
+   float:right;
+}
+
+#top_nav{
+   margin: 0px;
+   padding: 5px;
+}
+
+#top_nav ul li{
+   display:inline;
+}
+
+#top_nav ul li a{
+   text-decoration: none;
+   padding: 0.2em 1em;
+}
+
+.page_divider{
+   border-bottom: 1px dotted black;
+   display: inline-block;
+}
+
+#main{
+   padding: 35px 0;
+   border-top: 1px dotted #ddd;
+   display:inline-block;
+}
+
+.main{
+   display: inline-block;
+   margin-top: 35px;
+}
+
+#main img{
+   float: left;
+   padding-right: 35px;
+   max-width: 600px;
+}
+
+#main a{
+   text-decoration: underline;
+   color: blue;
+}
+
+#contact{
+   margin: auto 0 auto 0;
+   width: 500px;
+   //display: inline-block;
+}
+
+#thumbnails tbody tr td a img{
+   width:290px;
+   height:290px;
+   border: none;
+}
+
+#main #left_thumbnail{
+   padding: 0px 10px 0px 0px;
+}
+
+#main #middle_thumbnail{
+   padding: 0px 10px 0px 10px;
+}
+
+#main #right_thumbnail{
+   padding: 0px 0px 0px 10px;
+}
+   
+   

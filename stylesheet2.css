@@ -1,78 +1,75 @@
 @charset "utf-8";
-/* CSS Document */
 
-a{
+a {
 	text-decoration: none;
 	color: #232323;
 }
-.more a{
+.more a {
   color: #bbbbbb;
 }
 .regular_text a {
   color: blue;
   text-decoration: underline;
 }
-a:hover{
+a:hover {
   font-weight:bold;
 }
-.example{
+.example {
   height: 200px;
   background-size: cover;
   position: relative;
   margin: 40px 0 0 0;
 }
-body{
+body {
   font-family: "Courier New","Courier","monospace";
   font-size: 13px;
   line-height: 1.5em;
   margin: 0 auto;
   max-width: 900px;
-/*  background: #232323;
-  color: #bbbbbb;*/
   background: #bbbbbb;
   color: #232323;
 }
-.header{
+#canvas {
+  width: 80%;
+  margin: auto;
+}
+.header {
   margin: 100px 0 50px 0;
   height: 50px;
-/*   border-bottom: 1px dotted #aaaaaa;*/
 	border-bottom: 1px dotted #232323;
 }
-.footer{
-	margin: 100px 0 50px 0;
+.footer {
+	margin: 50px 0 100px 0;
 	border-top: 1px dotted #232323;
 }
 
-.logo{
+.logo {
   float: left;
   text-align: left;
 }
-.logo h1{
+.logo h1 {
   font-size: 27px;
   text-transform: uppercase;
   letter-spacing: 9px;
   font-weight: bold;
-  /*color: #aaaaaa;*/
 }
-nav{
-  /*color: #bbbbbb;*/
+nav {
   float: right;
   height: 50px;
 }
-nav ul{
+nav ul {
 	margin: 20px 0 0 0;
 }
-nav ul li{
+nav ul li {
    display:inline;
    text-align: right;
    padding-left: 20px;
 }
-nav ul li a{
+nav ul li a {
    text-decoration: none;
    text-align: right;
 }
 .regular_text {
-	/*color: #bbbbbb;*/
 	margin: 0;
 }
 .example p {
@@ -93,31 +90,30 @@ nav ul li a{
   -moz-transition: height .5s;
   -o-transition: height .5s;
 }
-small, .more{
+small, .more {
   opacity: 0;
 }
-.show-description p{
+.show-description p {
   height: 125px;
 }
-.show-description small, .show-description .more{
+.show-description small, .show-description .more {
   opacity: 1;
 }
-#first{
-/*  background-image: url("issf_small.png");*/
+#issf {
   background-image: url("ISSF/images/Tuna1.png");
   background-position: 0 -200px;
   background-repeat: no-repeat;
 }
-#second{
+#neuro_graphic {
   background-image: url("images/neuro_graphic_small.png");
 }
-#third{
+#productivity {
   background-image: url("images/productivity_small.png");
 }
-#fourth {
+#lab_work {
   background-image: url("images/lab_work_small.png");
 }
-#fifth {
+#dc_action {
   background-image: url("images/dc_action_small.png");
 }
 .more {
@@ -133,11 +129,29 @@ small, .more{
   padding-right: 35px;
   max-width: 600px;
 }
-.main img{
+.main img {
 	max-width: 900px;
 }
 .main {
   margin-top: 35px;
+  width: 80%;
+}
+
+#about_main {
+  display: inline;
+}
+#brain_image {
+  margin: 0;
+  width: 64%;
+  float: left;
+}
+#about_content {
+  width: 34%;
+  margin: 0;
+  float: right;
+}
+#contact {
+  margin-top: 50px;
 }
 
 #productivity_div {

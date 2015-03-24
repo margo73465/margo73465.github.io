@@ -1,116 +1,201 @@
-/* {
-   border: 1px dashed blue;
-}*/
+@charset "utf-8";
 
-a:link{
-   text-decoration:none;
-   color:black;
+a {
+	text-decoration: none;
+	color: #232323;
 }
-a:hover{
-   font-weight:bold;
+.more a {
+  color: #bbbbbb;
 }
-
-#canvas{
-   max-width: 900px;
-   margin: 10px auto;
-   padding: 50px;
+.regular_text a {
+  color: blue;
+  text-decoration: underline;
 }
-
-div{
-   display: block;
+a:hover {
+  font-weight:bold;
 }
-
-body{
-   font-family: "Courier New","Courier","monospace";
-   font-size: 13px;
-   line-height: 1.5em;
+.example {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
 }
-
-#header{
-   margin-bottom: 35px;
-   height: 50px;
+body {
+  font-family: "Courier New","Courier","monospace";
+  font-size: 13px;
+  line-height: 1.5em;
+  margin: 0 auto;
+  max-width: 900px;
+  background: #bbbbbb;
+  color: #232323;
 }
-
-#logo{
-   float:left;
-   display:inline-block;
-   text-align:left;
+#canvas {
+  width: 80%;
+  margin: auto;
 }
-
-.logo{
-   font-size: 27px;
-   text-transform: uppercase;
-   letter-spacing: 9px;
-   font-weight: bold;
+.header {
+  margin: 100px 0 50px 0;
+  height: 50px;
+	border-bottom: 1px dotted #232323;
 }
-
-#top_nav{
-   float:right;
+.footer {
+	margin: 50px 0 100px 0;
+	border-top: 1px dotted #232323;
 }
 
-#top_nav{
-   margin: 0px;
-   padding: 5px;
+.logo {
+  float: left;
+  text-align: left;
 }
-
-#top_nav ul li{
+.logo h1 {
+  font-size: 27px;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  font-weight: bold;
+}
+nav {
+  float: right;
+  height: 50px;
+}
+nav ul {
+	margin: 20px 0 0 0;
+}
+nav ul li {
    display:inline;
+   text-align: right;
+   padding-left: 20px;
 }
-
-#top_nav ul li a{
+nav ul li a {
    text-decoration: none;
-   padding: 0.2em 1em;
+   text-align: right;
+}
+.regular_text {
+	margin: 0;
+}
+.example p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  -o-transition: height .5s;
+}
+small, .more {
+  opacity: 0;
+}
+.show-description p {
+  height: 125px;
+}
+.show-description small, .show-description .more {
+  opacity: 1;
+}
+#issf {
+  background-image: url("ISSF/images/Tuna1.png");
+  background-position: 0 -200px;
+  background-repeat: no-repeat;
+}
+#neuro_graphic {
+  background-image: url("images/neuro_graphic_small.png");
+}
+#productivity {
+  background-image: url("images/productivity_small.png");
+}
+#lab_work {
+  background-image: url("images/lab_work_small.png");
+}
+#dc_action {
+  background-image: url("images/dc_action_small.png");
+}
+.more {
+  float: right;
 }
 
-.page_divider{
-   border-bottom: 1px dotted black;
-   display: inline-block;
+.issf_image {
+  display: inline-block;
+  margin-top: 35px;
+}
+.issf_image img {
+  float: left;
+  padding-right: 35px;
+  max-width: 600px;
+}
+.main img {
+	max-width: 900px;
+}
+.main {
+  margin-top: 35px;
+  width: 80%;
 }
 
-#main{
-   padding: 35px 0;
-   border-top: 1px dotted #ddd;
-   display:inline-block;
+#about_main {
+  display: inline;
+}
+#brain_image {
+  margin: 0;
+  width: 64%;
+  float: left;
+}
+#about_content {
+  width: 34%;
+  margin: 0;
+  float: right;
+}
+#contact {
+  margin-top: 50px;
 }
 
-.main{
-   display: inline-block;
-   margin-top: 35px;
+#productivity_div {
+	display: inline-block;
+	margin: 35px 0 0 0;
+	width: 900px;
+}
+#productivity_fig text {
+	font-family: Veranda, sans-serif;
+	font-size: 14px;
+	text-anchor: middle;
+}
+#grid {
+	width: 600px;
+	float: left;
+}
+#marginal {
+	width: 200px;
+	margin: 0 0 0 0;
+	float: right;
 }
 
-#main img{
-   float: left;
-   padding-right: 35px;
-   max-width: 600px;
+.iframe {
+  margin: 35px 0 0 0;
 }
 
-#main a{
-   text-decoration: underline;
-   color: blue;
+@media (max-width: 500px){
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
 }
-
-#contact{
-   margin: auto 0 auto 0;
-   width: 500px;
-   //display: inline-block;
-}
-
-#thumbnails tbody tr td a img{
-   width:290px;
-   height:290px;
-   border: none;
-}
-
-#main #left_thumbnail{
-   padding: 0px 10px 0px 0px;
-}
-
-#main #middle_thumbnail{
-   padding: 0px 10px 0px 10px;
-}
-
-#main #right_thumbnail{
-   padding: 0px 0px 0px 10px;
-}
-   
-   

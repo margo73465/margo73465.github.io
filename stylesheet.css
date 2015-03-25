@@ -161,11 +161,11 @@ small, .more {
 	text-anchor: middle;
 }
 #grid {
-	width: 600px;
+	width: 80%;
 	float: left;
 }
 #marginal {
-	width: 200px;
+	width: 19%;
 	margin: 0 0 0 0;
 	float: right;
 }

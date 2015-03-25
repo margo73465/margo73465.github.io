@@ -2,33 +2,32 @@
 <html>
 <head>
   <title>Margo Smith</title>
-  <link type="text/css" rel="stylesheet" href="../stylesheet.css" />
+  <link type="text/css" rel="stylesheet" href="/stylesheet.css" />
 </head>
 <body>
-  <div class="header">
-    <div class="logo">
-      <a href="http://margoleesmith.com">
-      <h1>Margo Smith</h1>
-	  </a>  
-    </div>
-    <nav class="main_nav">
-      <ul>
-        <li id="nav1"><a href="http://margoleesmith.com">Work</a></li>
-        <li id="nav2"><a href="http://margoleesmith.com/about/">About</a></li>
-      </ul>
-    </nav>
+
+<div class="header">
+  <div class="logo">
+    <a href="/"><h1>Margo Smith</h1></a>  
   </div>
+  <nav class="main_nav">
+    <ul>
+      <li id="nav1"><a href="/">Work</a></li>
+      <li id="nav2"><a href="/about">About</a></li>
+    </ul>
+  </nav>
+</div>
  
-  <h2>Cardiac Cell Modelling</h2>
-  <p class="regular_text">I created this small web app to assist in a study being carried out by the cardiology lab I work in (<a href="christinilab.org">Christini Lab</a> at Weill Cornell). Without getting into too much technical detail about the models and the biology, the goal was to create a simplified model that reproduced the behavior of a more complex model. Pressing the "Draw Grandi model" button shows the output of the complex model. Choosing a set of parameters from the dropdown menu and then clicking the "Draw AP" button will show the output of the simiplified model with various starting parameter sets. The parameter set called "GA params" is a set of parameters that were tuned by a genetic algorithm to mimic the complex Grandi model. The trouble with this parameter set is that it produces a very unnatural kink around 500ms. Using the sliders at the right it is possible to individually adjust each of the 30 parameters that define this model by +/- 99%. Using this method we were able to isolate the parameter theta_w as the culprit for the strange behvaior we observed. This discovery ultimately informed an alteration in the equations of the simpler model.</p>
-  <div class="main">
-    <iframe src="fenton_karma/" width="900px" height="700px">
-    </iframe>
-  </div>
+<h2>Cardiac Cell Modelling</h2>
+<p class="regular_text">I created this small web app to assist in a study being carried out by the cardiology lab I work in (<a href="christinilab.org">Christini Lab</a> at Weill Cornell). Without getting into too much technical detail about the models and the biology, the goal was to create a simplified model that reproduced the behavior of a more complex model. Pressing the "Draw Grandi model" button shows the output of the complex model. Choosing a set of parameters from the dropdown menu and then clicking the "Draw AP" button will show the output of the simiplified model with various starting parameter sets. The parameter set called "GA params" is a set of parameters that were tuned by a genetic algorithm to mimic the complex Grandi model. The trouble with this parameter set is that it produces a very unnatural kink around 500ms. Using the sliders at the right it is possible to individually adjust each of the 30 parameters that define this model by +/- 99%. Using this method we were able to isolate the parameter theta_w as the culprit for the strange behvaior we observed. This discovery ultimately informed an alteration in the equations of the simpler model.</p>
+<div class="main">
+  <iframe src="fenton_karma/" width="900px" height="700px">
+  </iframe>
+</div>
   
-  <div class="footer">
-    <p>March 11, 2013 / <a href="http://margoleesmith.com">Margo Smith</a></p>
-  </div>
+<div class="footer">
+  <p>March 22, 2015 / <a href="/">Margo Smith</a></p>
+</div>
 
 </body>
 </html>

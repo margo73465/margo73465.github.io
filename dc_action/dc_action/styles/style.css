@@ -1,10 +1,10 @@
-#map {
+/*#map {
   width: 960px;
   height: 500px;
-}
+}*/
 
 svg {
-border: 1px #000 solid;	
+	border: 1px #000 solid;	
 }
 
 path {

@@ -1,8 +1,11 @@
 //var COUNT_SCHOOL_DISPLAY = 3;
 
-var width = 550,
-    height = 600,
+var width = document.getElementById("content").clientWidth, //70 is for padding of 35 on each side
+    height = document.getElementById("main-container").clientHeight - 70,
     centered;
+
+    console.log(width);
+    console.l
 
 var svg, projection, path, g;
 var school_scale, school_data, activeId, choropleth_data;

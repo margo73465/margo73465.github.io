@@ -11,7 +11,7 @@ var params = ['u_o', 'u_u', 'theta_v', 'theta_w', 'theta_v_minus', 'theta_o', 't
 
 var x = d3.scale.linear()
   .range([0, width]) 
-  .domain([180, 240]);
+  .domain([180, 500]);
 var y = d3.scale.linear()
   .range([height, 0])
 	.domain([-100, 60]);
@@ -95,9 +95,7 @@ function readModel(form) {
   	data.forEach(function(d,i) {
   		cell[params[i]] = +d.input_parameter;
   	})
-  	//console.log(cell);
   	var voltage = calculateVoltage(cell);	
-  	//console.log(voltage);
 		graphVoltage(voltage);
   })
 }

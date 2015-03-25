@@ -16,8 +16,20 @@
 
 <div class = "main">
 	<div class = "top">
-		<form action = "" method = "GET" class = "initial_form">
-			Model Name: <input type = "text" name = "model_name" value="">
+		<form action = "" method = "GET" id = "initial_form">
+			Model Name: 
+			<select form="initial_form" name="model_name">
+  			<option>Select a model!</option>
+  			<option value="1p0_GAparams_APD90_expDI_200x200">Genetic algorithm 1</option>
+  			<option value="CRN">Courtemance model</option>
+				<option value="endo2">Endocardial</option>
+				<option value="epi">Epicardial</option>
+				<option value="GAparams">Genetic Algorithm 2</option>
+				<option value="mid">Midmyocardial</option>
+				<option value="PB">PB</option>			
+			</select>
+
+			<!-- <input type = "text" name = "model_name" value=""> -->
 			<input type = "button" value = "Draw AP" onClick = "readModel(this.form)">
 			<input type = "button" value = "Draw Grandi model" onClick = "drawGrandi()">
 		</form>
